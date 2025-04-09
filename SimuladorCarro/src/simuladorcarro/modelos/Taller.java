@@ -9,10 +9,10 @@ package simuladorcarro.modelos;
  * @author Daniel Muñoz
  */
 public class Taller {
-    private Car car;
+    private Carro car;
     private LectorArchivo LA;
-    private Wheel wheel;
-    private Engine engine;
+    private Ruedas wheel;
+    private Motor engine;
 
     public Taller() {
         this.LA = new LectorArchivo();
@@ -21,20 +21,20 @@ public class Taller {
         
     }
     
-    public Car createCar(){
-        car = new Car(wheel, engine);
+    public Carro createCar(){
+        car = new Carro(wheel, engine);
         return car;
     }
     
-    public Wheel createCarWheel(){
+    public Ruedas createCarWheel(){
         LA = new LectorArchivo();
         String quality = LA.splitWheel();
-        return new Wheel(quality);
+        return new Ruedas(quality);
     }
     
-    public Engine createCarEngine(){
+    public Motor createCarEngine(){
         LA = new LectorArchivo();
         String type = LA.splitEngine();
-        return new Engine(type);
+        return new Motor(type);
     }
 }

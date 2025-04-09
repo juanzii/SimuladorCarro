@@ -8,7 +8,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-import simuladorcarro.modelos.CarSimulator;
+import simuladorcarro.modelos.SimuladorCarro;
 
 /**
  *
@@ -16,7 +16,7 @@ import simuladorcarro.modelos.CarSimulator;
  */
 public class MainWindow extends javax.swing.JFrame {
 
-    private CarSimulator CS;
+    private SimuladorCarro CS;
     private FondoPanel fondo;
     
     /**
@@ -187,7 +187,7 @@ public class MainWindow extends javax.swing.JFrame {
      */
         public static void main(String args[]) {
         MainWindow MW = new MainWindow();
-        CarSimulator CS = new CarSimulator();
+        SimuladorCarro CS = new SimuladorCarro();
         
         MW.setCarSimulator(CS);
 
@@ -211,14 +211,14 @@ public class MainWindow extends javax.swing.JFrame {
     /**
      * @return the car
      */
-    public CarSimulator getCarSimulator() {
+    public SimuladorCarro getCarSimulator() {
         return CS;
     }
 
     /**
      * @param car the car to set
      */
-    public void setCarSimulator(CarSimulator car) {
+    public void setCarSimulator(SimuladorCarro car) {
         this.CS = car;
     }
 }

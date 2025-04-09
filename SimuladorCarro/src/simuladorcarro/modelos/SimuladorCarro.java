@@ -14,12 +14,13 @@ import simuladorcarro.exception.FrenarVelocidadSuperiorALlantasException;
 /**
  *
  * @author Daniel Muñoz
+ * @author Juan Simon Patiño
  */
-public class CarSimulator {
+public class SimuladorCarro {
     private Taller taller;
-    private Car car;
+    private Carro car;
 
-    public CarSimulator() {
+    public SimuladorCarro() {
         this.taller = new Taller();
         this.car = taller.createCar();
     }
@@ -123,14 +124,14 @@ public class CarSimulator {
     /**
      * @return the car
      */
-    public Car getCar() {
+    public Carro getCar() {
         return car;
     }
 
     /**
      * @param car the car to set
      */
-    public void setCar(Car car) {
+    public void setCar(Carro car) {
         this.car = car;
     }
 }

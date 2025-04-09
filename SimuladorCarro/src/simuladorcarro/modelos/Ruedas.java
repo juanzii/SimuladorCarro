@@ -8,11 +8,11 @@ package simuladorcarro.modelos;
  *
  * @author Daniel Muñoz
  */
-public class Wheel {
+public class Ruedas {
     private String quality;
     private int maxVel;
 
-    public Wheel(String quality) {
+    public Ruedas(String quality) {
         this.quality = quality;
         if(getQuality().equals("Buenas")){
             this.maxVel = 110;

@@ -15,14 +15,15 @@ import simuladorcarro.exception.FrenarVelocidadSuperiorALlantasException;
 /**
  *
  * @author Daniel Muñoz
+ * @author Juan Simon Patiño
  */
-public class Car {
+public class Carro {
     private int velocidad;
     private boolean estado;
-    private Wheel myWheel;
-    private Engine myEngine;
+    private Ruedas myWheel;
+    private Motor myEngine;
 
-    public Car(Wheel wheel, Engine engine) {
+    public Carro(Ruedas wheel, Motor engine) {
         this.myWheel = wheel;
         this.myEngine = engine;
     }
@@ -109,28 +110,28 @@ public class Car {
     /**
      * @return the myWheel
      */
-    public Wheel getMyWheel() {
+    public Ruedas getMyWheel() {
         return myWheel;
     }
 
     /**
      * @return the myEngine
      */
-    public Engine getMyEngine() {
+    public Motor getMyEngine() {
         return myEngine;
     }  
 
     /**
      * @param myWheel the myWheel to set
      */
-    public void setMyWheel(Wheel myWheel) {
+    public void setMyWheel(Ruedas myWheel) {
         this.myWheel = myWheel;
     }
 
     /**
      * @param myEngine the myEngine to set
      */
-    public void setMyEngine(Engine myEngine) {
+    public void setMyEngine(Motor myEngine) {
         this.myEngine = myEngine;
     }
 

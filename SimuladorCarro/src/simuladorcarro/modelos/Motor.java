@@ -7,13 +7,14 @@ package simuladorcarro.modelos;
 /**
  *
  * @author Daniel Muñoz
+ * @author Juan Simon Patiño
  */
-public class Engine {
+public class Motor {
     private String type;
     private int maxVel;
     private LectorArchivo LA;
 
-    public Engine(String type) {
+    public Motor(String type) {
         if(type.equals("1000")){
             this.maxVel = 100;
         }
